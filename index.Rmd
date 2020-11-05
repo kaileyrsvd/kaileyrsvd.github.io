@@ -9,7 +9,7 @@ output:
 
 ## Oh, hello... 
 
-![](me.jpg)
+![](./images/me.jpg)
 
 <center> Welcome to my space!
 
@@ -17,6 +17,6 @@ As told by the name of this website, my name is Kailey. Now, a few things about 
 
 - I am from Maui, Hawaii (but was also raised in Southern California) 
 - I am currently a MPH candidate at Columbia Mailman School of Public Health in New York City 
-- I graduated from the University of California, Los Angeles... Go Bruins! 
+- Go Bruins! I graduated from the University of California, Los Angeles 
 - The first place I traveled to outside of the U.S. was Cape Town, South Africa (and I would move there in a heartbeat)
 - I find a lot of enjoyment in the little things... (like how close I was to 'pinching' the sun in this picture)
