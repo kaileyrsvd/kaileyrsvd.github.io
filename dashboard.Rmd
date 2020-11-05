@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "NY NOAA Data "
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -73,7 +73,7 @@ ny_noaa %>%
 ```{r}
 ny_noaa %>% 
    filter(
-    month %in% c("07")
+    month %in% c("01")
     ) %>% 
   filter(
     year %in% c("1985", "1990", "1995", "2000", "2005")
@@ -86,7 +86,7 @@ ny_noaa %>%
     x = ~year, y = ~mean_prcp, color = ~id,
           type = "bar", colors = "viridis") %>% 
   layout(
-    title = "....here", 
+    title = "Avg. Precipitation in January", 
     showlegend = FALSE)
 ```
 
