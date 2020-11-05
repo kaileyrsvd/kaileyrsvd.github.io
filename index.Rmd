@@ -1,0 +1,8 @@
+---
+title: "Kailey Rishovd"
+output: 
+  html_document:
+    Code_folding: hide
+    toc: true
+    toc_float: true
+---
