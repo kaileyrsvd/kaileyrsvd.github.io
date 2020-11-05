@@ -1,0 +1,92 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+library(flexdashboard)
+```
+
+```{r, include=FALSE}
+data("ny_noaa")
+
+ny_noaa = 
+  ny_noaa %>% 
+  separate(date, into = c("year", "month", "day"), sep = "-") %>% 
+  mutate_at(vars(year:day), as.factor) %>% 
+  mutate_at(vars(snow:tmin), as.double) %>% 
+  mutate(
+    prcp = prcp/10, 
+    tmax = tmax/10, 
+    tmin = tmin/10,
+  )
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+ny_noaa %>% 
+   filter(
+    month %in% c("12")
+    ) %>% 
+  group_by(month, year, id) %>% 
+  summarize(
+    mean_tmax = mean(tmax, na.rm = TRUE)
+  ) %>% 
+  plot_ly(
+    x = ~year, y = ~mean_tmax, color = ~id,
+          type = "scatter",  mode = 'markers', line = list(dash = "solid"), colors = "viridis") %>% 
+  layout(
+    title = "Avg. Temperatures in Decemeber", 
+    showlegend = FALSE)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ny_noaa %>% 
+  filter(snow > 0 & snow < 100) %>% 
+  plot_ly(
+    y = ~snow, x = ~year, color = ~year, 
+    type = "violin", colors = "viridis") %>% 
+    layout(
+    title = "Snowfall over the years", 
+    showlegend = FALSE)
+```
+
+### Chart C
+
+```{r}
+ny_noaa %>% 
+   filter(
+    month %in% c("07")
+    ) %>% 
+  filter(
+    year %in% c("1985", "1990", "1995", "2000", "2005")
+  ) %>% 
+  group_by(month, year, id) %>% 
+  summarize(
+    mean_prcp = mean(prcp, na.rm = TRUE)
+  ) %>% 
+  plot_ly(
+    x = ~year, y = ~mean_prcp, color = ~id,
+          type = "bar", colors = "viridis") %>% 
+  layout(
+    title = "....here", 
+    showlegend = FALSE)
+```
+
