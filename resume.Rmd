@@ -1,0 +1,81 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    Code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+## Profile 
+
+MPH Candidate at the Columbia Mailman School of Public Health, pursuing an advanced degree in Population and Family Health Studies with a certificate in Applied Biostatistics. Displays both domestic and global experience. Previous field researcher of child growth development and nutrition with For Hearts and Souls, a non-profit medical outreach organization that focuses on child heart health in impoverished countries.
+
+## Education 
+
+Sept. 2019 - Expected May 2021        
+**Master of Public Health (MPH) in Population and Family Health Studies**, GPA: 4.03/4.0     
+*Columbia University Mailman School of Public Health*, New York City, NY  
+          
+Oct. 2014 - June 2018       
+**Bachelor of Arts in Anthropology**, Major GPA: 3.96/4.0     
+*University of California, Los Angeles*, Los Angeles, CA      
+    
+March 2017 - June 2017       
+**Academic Semester Abroad**, GPA: 4.0/4.0     
+*University of Cape Town*, Cape Town, South Africa  
+     
+## Public Health Experience
+    
+Sept. 2018 - Nov. 2018      
+**Field Researcher**		   				 
+*For Hearts and Souls*, Blantyre, Malawi      
+- Designed and conducted on-site orphan growth development research.     
+- Facilitated health screening of 45 children residing at Maoni orphanage; recorded CBC screenings for professional analysis and used analyzed data to distribute iron supplements.     
+- Examined data of children facing health disparities such as HIV, iron deficiency anemia, and leukopenia. Health screening report manuscript in progress.     
+- Taught orphanage overseer to properly allocate and record iron supplement distribution to children with iron deficiency anemia for the remainder of the distribution period.       
+[Update: Oct. 2019 received completed allocation records and follow-up CBC results.]      
+         
+## Teaching Experience 
+         
+Sept. 2018 - Nov. 2018       
+**Standard 8 Teacher Assistant**      
+*Molgic Primary*, Blantyre, Malawi       
+- Regularly planned and led English, Science, and Mathematics classes to children 14-16 years old. Frequently taught Life Skills and Social Science.      
+- Developed the children’s skills in English while being translated into Chichewa.    
+        
+
+## Experiential Learning 
+         
+March 2019       
+**For Hearts and Souls**     
+*Kurdistan, Iraq*          
+- Observed fourteen pediatric cardiac catheterizations alongside medical professionals, as a student-assistant, gaining knowledge about the surgical process, pre- and post-operative care, and the role of the child life specialist. 
+           
+July 2018      
+**For Hearts and Souls**     
+*Lusaka, Zambia*          
+- Observed nine pediatric cardiac catheterizations in Lusaka, Zambia while photographically documenting and assisting the medical team.       
+- Gained insight into the socio-economic impact of medical care and life longevity.      
+        
+## Volunteer Experience 
+          
+March 2017 - June 2017       
+**SHAWCO Education Project**         
+*Cape Town, South Africa*       
+- Taught numeracy and literacy to children of Khayelitsha, one of the largest townships in South Africa, during a semester abroad at the University of Cape Town.     
+            
+Sept. 2015 - March 2017     	
+**Bruins for Ronald McDonald House Charities**        
+*Los Angeles, CA*        
+Publicity Chair, Photographer
+ 
+April. 2016 - June 2016	    
+**Sustainable Youth Teacher**    						
+*Los Angeles, CA*      
+- Planned and led environmental sustainability lessons to elementary students. 
+
+Sept. 2015 - June 2016    
+**Iris Cantor Breast Imaging Center**      
+*Los Angeles, CA*    		  
+- Managed client communication and appointment preparation.	   		
