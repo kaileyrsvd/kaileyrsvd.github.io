@@ -34,7 +34,7 @@ ny_noaa =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Temperatures
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
@@ -57,7 +57,7 @@ ny_noaa %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Snowfall
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
@@ -70,7 +70,7 @@ ny_noaa %>%
     showlegend = FALSE)
 ```
 
-### Chart C
+### Percipitation
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
