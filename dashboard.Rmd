@@ -10,6 +10,7 @@ output:
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(patchwork)
 
 library(flexdashboard)
 ```
@@ -37,19 +38,20 @@ Column {data-width=650}
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
-   filter(
-    month %in% c("12")
+     filter(
+      month %in% c("12")
+      ) %>% 
+    group_by(month, year, id) %>% 
+    summarize(
+      mean_tmax = mean(tmax, na.rm = TRUE)
     ) %>% 
-  group_by(month, year, id) %>% 
-  summarize(
-    mean_tmax = mean(tmax, na.rm = TRUE)
-  ) %>% 
-  plot_ly(
-    x = ~year, y = ~mean_tmax, color = ~id,
-          type = "scatter",  mode = 'markers', line = list(dash = "solid"), colors = "viridis") %>% 
-  layout(
-    title = "Avg. Temperatures in Decemeber", 
-    showlegend = FALSE)
+    plot_ly(
+      x = ~year, y = ~mean_tmax, color = ~id,
+            type = "scatter",  mode = 'markers', line = list(dash = "solid"), colors = "viridis") %>% 
+    layout(
+      title = "Avg. Temperatures in Decemeber", 
+      showlegend = FALSE)
+
 ```
 
 Column {data-width=350}
@@ -57,7 +59,7 @@ Column {data-width=350}
 
 ### Chart B
 
-```{r}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
   filter(snow > 0 & snow < 100) %>% 
   plot_ly(
@@ -70,7 +72,7 @@ ny_noaa %>%
 
 ### Chart C
 
-```{r}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 ny_noaa %>% 
   filter(
     month %in% c("01")
